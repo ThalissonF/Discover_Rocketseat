@@ -25,15 +25,17 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--text-color);
+    font-family: 'Inter', sans-serif;
 }
 
 body{
     background: var(--bg-url) no-repeat top center/cover;
-    font-family: 'Inter', sans-serif;
+    height: 100vh;
 }
 
 .container{
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: 56px auto 0px;
     padding: 0 24px;
 }
@@ -151,4 +153,16 @@ footer{
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+}
+
+/* Media Queries */
+
+@media (min-width: 700px){
+    :root{
+        --bg-url: url(../img/bg-desktop-dark.jpg);
+    }
+
+    .light{
+        --bg-url: url(../img/bg-desktop-light.jpg);
+    }
 }
